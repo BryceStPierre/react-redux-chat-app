@@ -4,10 +4,12 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-import { Provider} from 'react-redux';
+import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
 import { addUser } from './actions';
+import { setupSocket } from './sockets';
+
 import chat from './reducers';
 
 const store = createStore(chat);
